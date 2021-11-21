@@ -6,7 +6,12 @@ function App() {
   return (
     <div className="App">
         <Topbar/>
-        <Sidebar/>
+        <div className="container">
+          <Sidebar/>
+          <div className="mainPage">
+            other
+          </div>
+        </div>
     </div>
   );
 }
