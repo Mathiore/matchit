@@ -1,5 +1,5 @@
 import './sidebar.css'
-import {EditLocationOutlined, SportsBasketballOutlined, SportsSoccerOutlined, SportsVolleyballOutlined, PublicOutlined} from '@material-ui/icons'
+import {EditLocationOutlined, SportsBasketballOutlined, SportsSoccerOutlined, SportsVolleyballOutlined, PublicOutlined, ControlPointOutlined} from '@material-ui/icons'
 
 export default Sidebar =>
     <div className="sidebar">
@@ -25,6 +25,10 @@ export default Sidebar =>
                     <li className="sideItem">
                         <SportsVolleyballOutlined/>
                         VÔLEI
+                    </li>
+                    <li className="sideItem">
+                        <ControlPointOutlined/>
+                        PERSONALIZADOS
                     </li>
                 </ul>
             </div>
