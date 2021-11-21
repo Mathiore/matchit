@@ -1,5 +1,6 @@
 import './topbar.css'
 import logo from './img/logo.png'
+import profile from './img/profile.png'
 
 export default Topbar =>
     <div className="topbar">
@@ -11,12 +12,11 @@ export default Topbar =>
                 <nav>
                     <ul>
                         <li>Início</li>
-                        <li>Criar partida</li>
-                        <li>Procurar partida</li>
-                        <li>Sign in</li>
-                        
+                        <li>Entre</li>
+                        <li>Cadastre-se</li>
                     </ul>
                 </nav>
+                <img src={profile} alt="" className="profile" />
                 
             </div>
         </div>
