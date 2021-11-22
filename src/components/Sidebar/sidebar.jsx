@@ -7,27 +7,27 @@ export default Sidebar =>
             <div className="sideMenu">
                 <ul className="sideList">
                     <li className="sideItem">
-                        <EditLocationOutlined/>
+                        <EditLocationOutlined className="barIcon"/>
                         CRIAR PARTIDA
                     </li>
-                    <li className="sideItem">
-                        <PublicOutlined/>
+                    <li className="sideItem active">
+                        <PublicOutlined className="barIcon"/>
                         PROCURAR PARTIDA
                     </li>
                     <li className="sideItem">
-                        <SportsBasketballOutlined/>
+                        <SportsBasketballOutlined className="barIcon"/>
                         BASQUETE
                     </li>
                     <li className="sideItem">
-                        <SportsSoccerOutlined/>
+                        <SportsSoccerOutlined className="barIcon"/>
                         FUTEBOL
                     </li>
                     <li className="sideItem">
-                        <SportsVolleyballOutlined/>
+                        <SportsVolleyballOutlined className="barIcon" />
                         VÔLEI
                     </li>
                     <li className="sideItem">
-                        <ControlPointOutlined/>
+                        <ControlPointOutlined className="barIcon"/>
                         PERSONALIZADOS
                     </li>
                 </ul>
