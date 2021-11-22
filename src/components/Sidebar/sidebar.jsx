@@ -6,11 +6,11 @@ export default Sidebar =>
         <div className="sidebarWrapper">
             <div className="sideMenu">
                 <ul className="sideList">
-                    <li className="sideItem">
+                    <li className="sideItem active">
                         <EditLocationOutlined className="barIcon"/>
                         CRIAR PARTIDA
                     </li>
-                    <li className="sideItem active">
+                    <li className="sideItem">
                         <PublicOutlined className="barIcon"/>
                         PROCURAR PARTIDA
                     </li>

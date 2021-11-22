@@ -1,6 +1,7 @@
 import './App.css';
 import Topbar from './components/Topbar/topbar'
 import Sidebar from './components/Sidebar/sidebar'
+import CriarPartida from './pages/criarPartida/criarPartida';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
         <div className="container">
           <Sidebar/>
           <div className="mainPage">
-            other
+            <CriarPartida/>
           </div>
         </div>
     </div>
