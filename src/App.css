@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap%27');
+
 .container{
     display:flex;
 }
 
 .mainPage{
     flex:5;
+    
 }
