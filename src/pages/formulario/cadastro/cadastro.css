@@ -20,7 +20,7 @@
 
 .name, .email, .password{
     margin: 20px;
-    color: #fff;
+    color: rgba(224, 221, 221, 0.877);
     font-size: 16px;
 }
 
@@ -31,6 +31,36 @@
 .inputCadastro{
     height: 32px;
     font-size: 20px;
+    color:#fff;
     outline: none;
     width: 100%;
+    border-style: none;
+    border-bottom: 2px solid #fff;
+    margin-bottom:10px;
+    background-color: #fc1749f3;
+}
+
+.submitCadastro{
+    display:flex;
+    text-transform: uppercase;
+    font-size: 20px;
+    border-radius: 25px;
+    color: #fff;
+    padding: 10px 60px;
+    margin: auto;
+    outline: none;
+    border:none;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.button:active{
+    transform: translateY(2px);
+}
+.form-success{
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+    min-width: 370px;
+    color: #fff;
 }
