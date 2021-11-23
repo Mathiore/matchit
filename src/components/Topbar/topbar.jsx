@@ -1,6 +1,7 @@
 import './topbar.css'
 import logo from './img/logo.png'
 import profile from './img/profile.png'
+import {Link} from 'react-router-dom'
 
 export default Topbar =>
     <div className="topbar">
@@ -13,7 +14,7 @@ export default Topbar =>
                     <ul>
                         <li>Início</li>
                         <li>Entre</li>
-                        <li>Cadastre-se</li>
+                        <li><Link to="/Cadastro" style={{textDecoration: 'none', color: '#fff'}}>Cadastre-se</Link></li>
                     </ul>
                 </nav>
                 <img src={profile} alt="" className="profile" />

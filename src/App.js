@@ -8,6 +8,7 @@ import {
   Route,
 } from "react-router-dom";
 import Formulario from './pages/formulario/formulario';
+import ProcurarPartida from './pages/procurarPartida/procurarPartida';
 
 function App() {
   return (
@@ -16,9 +17,10 @@ function App() {
         <div className="container">
           <Sidebar/>
             <Routes>
-                <Route path="/" element={<Formulario/>}></Route>
+                <Route exact path="/" element={<Formulario/>}></Route>
                 <Route path="/CriarPartida" element={<CriarPartida/>}></Route>
-
+                <Route path="/ProcurarPartida" element={<ProcurarPartida/>}></Route>
+                <Route exact path="/Cadastro" element={<Formulario/>}></Route>
             </Routes>
         </div>
     </Router>
