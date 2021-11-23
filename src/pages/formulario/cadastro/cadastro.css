@@ -9,5 +9,28 @@
     min-width: 350px;
     min-height: 650px;
     box-sizing: border-box;
+    background-color: #fc1749f3;
 }
 
+.title{
+    color: #fff;
+    text-align: center;
+    margin: 80px 0px 40px 0px;
+}
+
+.name, .email, .password{
+    margin: 20px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.password{
+    margin-bottom: 40px;
+}
+
+.inputCadastro{
+    height: 32px;
+    font-size: 20px;
+    outline: none;
+    width: 100%;
+}
