@@ -2,7 +2,7 @@ import "./criarPartida.css"
 
 export default function CriarPartida(){
     return(
-        <div>
+        <div className="page">
             <div className="box">
                 <form action="">
                     <fieldset>

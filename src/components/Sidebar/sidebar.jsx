@@ -15,18 +15,6 @@ export default Sidebar =>
                         PROCURAR PARTIDA
                     </li>
                     <li className="sideItem">
-                        <SportsBasketballOutlined className="barIcon"/>
-                        BASQUETE
-                    </li>
-                    <li className="sideItem">
-                        <SportsSoccerOutlined className="barIcon"/>
-                        FUTEBOL
-                    </li>
-                    <li className="sideItem">
-                        <SportsVolleyballOutlined className="barIcon" />
-                        VÔLEI
-                    </li>
-                    <li className="sideItem">
                         <ControlPointOutlined className="barIcon"/>
                         PERSONALIZADOS
                     </li>
