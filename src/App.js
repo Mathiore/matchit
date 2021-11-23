@@ -7,6 +7,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import Formulario from './pages/formulario/formulario';
 
 function App() {
   return (
@@ -15,8 +16,9 @@ function App() {
         <div className="container">
           <Sidebar/>
             <Routes>
+                <Route path="/" element={<Formulario/>}></Route>
                 <Route path="/CriarPartida" element={<CriarPartida/>}></Route>
-                
+
             </Routes>
         </div>
     </Router>
