@@ -21,6 +21,7 @@ function App() {
                 <Route path="/CriarPartida" element={<CriarPartida/>}></Route>
                 <Route path="/ProcurarPartida" element={<ProcurarPartida/>}></Route>
                 <Route exact path="/Cadastro" element={<Formulario/>}></Route>
+                <Route exact path="/Login" element={<Formulario/>}></Route>
             </Routes>
         </div>
     </Router>
