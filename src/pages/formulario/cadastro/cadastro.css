@@ -21,12 +21,12 @@
 
 .name, .email, .password{
     margin: 20px;
-    color: rgba(224, 221, 221, 0.877);
+    color: #fff;
     font-size: 16px;
 }
 
 .password{
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 
 .inputCadastro{
@@ -67,4 +67,8 @@ button:active{
     min-width: 370px;
     color: #fff;
 
+}
+
+.error{
+    color: rgba(224, 221, 221, 0.877);
 }
