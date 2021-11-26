@@ -13,7 +13,7 @@ export default Topbar =>
                 <nav>
                     <ul>
                         <li>Início</li>
-                        <li>Entre</li>
+                        <li><Link to="/Login" style={{textDecoration: 'none', color: '#fff'}}>Entre</Link></li>
                         <li><Link to="/Cadastro" style={{textDecoration: 'none', color: '#fff'}}>Cadastre-se</Link></li>
                     </ul>
                 </nav>
