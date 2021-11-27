@@ -1,13 +1,20 @@
-import './formulario.css'
-import Cadastro from './cadastro/cadastro'
-
+import './formulario.css';
+import Cadastro from './cadastro/cadastro';
+import ValidationSuccess from './cadastro/validationSuccess';
+import { useState } from 'react';
 
 export default function Formulario(){
+    
+    const[CadastroConcluido, setCadastro] = useState(false);
+
+    const submitCadastro = () => {
+        setCadastro(true);
+    };
 
     return(
 
         <div className="formulario">
-            <Cadastro/>
+            { !CadastroConcluido ? (<Cadastro submitForm={submitCadastro}/>) : (<ValidationSuccess/>)}
         </div>
     )
 }

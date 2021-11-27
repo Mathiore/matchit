@@ -1,32 +1,9 @@
 import './cadastro.css'
-import {useState} from 'react';
-import Validation from './validation';
+import Login from '../login/login';
 
-export default function Cadastro(){
+export default function Cadastro({submitForm}){
 
-    const enviarSubmit = (event) => {
-        event.preventDefault();
-        setErrors(Validation(values));
-    };
-
-    const[values, setValues] = useState({
-        fullname:"",
-        email:"",
-        password:"",
-        confipassword:"",
-    });
-
-    const handleChange = (event) =>{
-        setValues({
-            ...values,
-            [event.target.name]: event.target.value,
-        });
-    };
-
-    const[errors, setErrors] = useState({
-
-    });
-
+    const{handleChange, enviarSubmit, values, errors} = Login(submitForm);
     return(
         <div className="container">
             <div className="app-wrapper">
