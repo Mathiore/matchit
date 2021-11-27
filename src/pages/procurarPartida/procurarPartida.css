@@ -1,4 +1,38 @@
 .procurar{
     display: flex;
     flex:5;
+    justify-content: space-evenly;
+    font-family: 'Alata', sans-serif;
+}
+
+.card-container{
+    width:95%;
+    display:flex;
+    align-items:center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 6rem auto;
+}
+
+.card{
+    height:40rem;
+    width:30rem;
+    background-color: #fc1749f3; 
+    border-radius: 10px;
+    color: #fff;
+}
+
+.conteudo-titulo{
+    text-align: center;
+}
+
+.lista-partidas{
+    position: relative;
+    width: 450px;
+    box-sizing: border-box;
+}
+
+.partidas{
+    background-color: #f1446af3; 
+    padding: 10px 20px;
 }
