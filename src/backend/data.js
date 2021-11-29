@@ -16,6 +16,19 @@ const data ={
         },
         
     ],
-}
+
+    partidas:[
+        {
+            jogo: 'basquete',
+            jogadores: 4/5,
+            tipo: 'Masculino',
+        },
+        {
+            jogo: 'basquete',
+            jogadores: 4/5,
+            tipo: 'Masculino',
+        },
+    ],
+};
 
 export default data;

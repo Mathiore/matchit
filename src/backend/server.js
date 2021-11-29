@@ -1,14 +1,15 @@
 import mongoose from 'mongoose';
 import express from 'express';
-import userRouter from './routers/userRouter';
+import userRouter from './routers/userRouter.js';
+import data from './data.js';
 
 const app = express();
 
-mongoose.connect('mongodb://localhost/Matchit',{
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-});
+
+
+app.get('/api/partidas',(req,res)=>{
+    res.send(data.partidas);
+})
 
 app.use('/api/users', userRouter);
 
