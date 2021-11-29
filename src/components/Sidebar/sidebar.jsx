@@ -19,10 +19,6 @@ export default Sidebar =>
                         PROCURAR PARTIDA
                         </Link>
                     </li>
-                    <li className="sideItem">
-                        <ControlPointOutlined className="barIcon"/>
-                        PERSONALIZADOS
-                    </li>
                 </ul>
             </div>
         </div>

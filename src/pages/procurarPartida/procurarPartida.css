@@ -3,6 +3,7 @@
     flex:5;
     justify-content: space-evenly;
     font-family: 'Alata', sans-serif;
+    overflow: hidden;
 }
 
 .card-container{
@@ -16,10 +17,11 @@
 
 .card{
     height:40rem;
-    width:30rem;
+    width:25rem;
     background-color: #fc1749f3; 
     border-radius: 10px;
     color: #fff;
+    box-shadow: 5px 5px 25px 0px rgba(0,0,0,0.6);
 }
 
 .conteudo-titulo{
@@ -28,7 +30,7 @@
 
 .lista-partidas{
     position: relative;
-    width: 450px;
+    width: 400px;
     box-sizing: border-box;
 }
 
@@ -36,7 +38,7 @@
     background-color: #f1446af3; 
     padding: 10px 20px;
     list-style: none;
-    width: 440px;
+    width: 350px;
     margin-left: -40px;
     height: 20px;
     display: flex;
@@ -47,7 +49,7 @@
 }
 
 .partidas span:nth-child(1){
-    width: 450px;
+    width: 350px;
 }
 
 .entrar{
@@ -56,4 +58,32 @@
 
 .partidas:hover{
     transform: scale(1.1);
+}
+
+.pesquisa{
+    position: absolute;
+    border-radius: 15px;
+    box-shadow: 5px 5px 25px 0px rgba(0,0,0,0.6);
+    background-color: #f14469;
+    color: #fff;
+}
+
+.radio_input{
+    display: none;
+}
+
+.radio_label{
+    padding: 0px 14px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background 0.1s;
+}
+
+.radio_label:not(:last-of-type){
+    border-right: 1px solid #970827;
+}
+
+.radio_input:checked + .radio_label{
+    background-color:#970827;
+    border-radius: 10px;
 }

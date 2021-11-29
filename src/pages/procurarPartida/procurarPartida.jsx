@@ -16,10 +16,15 @@ export default function ProcurarPartida(){
 
     return(
         <div className="procurar">
+            <div className="pesquisa">
+                <input type="radio" className="radio_input" name="pesquisa" id="pesquisa1"/>
+                <label htmlFor="pesquisa1" className="radio_label">Basquete</label>
+                <input type="radio" className="radio_input" name="pesquisa" id="pesquisa2"/>
+                <label htmlFor="pesquisa2" className="radio_label">Futebol</label>
+                <input type="radio" className="radio_input" name="pesquisa" id="pesquisa3"/>
+                <label htmlFor="pesquisa3" className="radio_label">Vôlei</label>
+            </div>
             <div className="card-container">
-                <div className="pesquisa">
-
-                </div>
                 <div className="card">
                     <div className="conteudo">
                         <h1 className="conteudo-titulo">
