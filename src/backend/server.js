@@ -19,3 +19,7 @@ app.get('/', (req, res)=>{
 app.use((err, req, res, next)=>{
     res.status(500).send({message:err.message});
 });
+
+app.listen(5000, ()=>{
+    console.log('Serve at http://localhost:5000');
+});
