@@ -1,7 +1,19 @@
 import './procurarPartida.css'
 import {MeetingRoomOutlined} from '@material-ui/icons';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 export default function ProcurarPartida(){
+    const [partida, setPartida] = useState([]);
+
+    useEffect(()=>{
+        const fetchData = async () =>{
+            const {data} = await axios.get('/api/partidas');
+            setPartida(data);
+        };
+        fetchData();
+    },[])
+
     return(
         <div className="procurar">
             <div className="card-container">
@@ -13,28 +25,15 @@ export default function ProcurarPartida(){
                         <h1 className="conteudo-titulo">
                             Partidas em Aberto
                         </h1>
-                        <ul className="list-partidas">
-                            <li className="partidas">
-                                <span className="nome-partida">Jogo de Basquete</span>
-                                <span className="num-jogadores"> 1/6</span>
-                                <span className="entrar"><MeetingRoomOutlined/></span>
-                            </li>
-                            <li className="partidas">
-                                <span className="nome-partida">Jogo de Futebol</span>
-                                <span className="num-jogadores"> 3/6</span>
-                                <span className="entrar"><MeetingRoomOutlined/></span>
-                            </li>
-                            <li className="partidas">
-                                <span className="nome-partida">Jogo de Vôlei</span>
-                                <span className="num-jogadores"> 5/6</span>
-                                <span className="entrar"><MeetingRoomOutlined/></span>
-                            </li>
-                            <li className="partidas">
-                                <span className="nome-partida">Jogo do Joãozinho</span>
-                                <span className="num-jogadores"> 4/6</span>
-                                <span className="entrar"><MeetingRoomOutlined/></span>
-                            </li>
-                        </ul>
+                        {partida.map((partidas)=>(
+                            <ul className="list-partidas">
+                                <li className="partidas">
+                                    <span className="nome-partida">{partidas.jogo}</span>
+                                    <span className="num-jogadores">{partidas.jogadores}</span>
+                                    <span className="entrar"><MeetingRoomOutlined/></span>
+                                </li>
+                            </ul>
+                        ))}
                     </div>
                 </div>
                 <div className="card">

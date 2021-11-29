@@ -19,14 +19,24 @@ const data ={
 
     partidas:[
         {
-            jogo: 'basquete',
-            jogadores: 4/5,
+            jogo: 'Basquete',
+            jogadores: '4/5',
             tipo: 'Masculino',
         },
         {
-            jogo: 'basquete',
-            jogadores: 4/5,
+            jogo: 'Vôlei',
+            jogadores: '3/5',
+            tipo: 'Misto',
+        },
+        {
+            jogo: 'Futebol',
+            jogadores: '3/5',
             tipo: 'Masculino',
+        },
+        {
+            jogo: 'Personalizado',
+            jogadores: '3/5',
+            tipo: 'Feminino',
         },
     ],
 };
