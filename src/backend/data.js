@@ -35,7 +35,7 @@ const data ={
         },
         {
             jogo: 'Personalizado',
-            jogadores: '3/5',
+            jogadores: '2/5',
             tipo: 'Feminino',
         },
     ],

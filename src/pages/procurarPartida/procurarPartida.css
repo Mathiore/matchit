@@ -35,4 +35,25 @@
 .partidas{
     background-color: #f1446af3; 
     padding: 10px 20px;
+    list-style: none;
+    width: 440px;
+    margin-left: -40px;
+    height: 20px;
+    display: flex;
+    transition: .5s;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.partidas span:nth-child(1){
+    width: 450px;
+}
+
+.entrar{
+    cursor:pointer;
+}
+
+.partidas:hover{
+    transform: scale(1.1);
 }
