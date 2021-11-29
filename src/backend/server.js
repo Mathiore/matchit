@@ -11,3 +11,11 @@ mongoose.connect('mongodb://localhost/Matchit',{
 });
 
 app.use('/api/users', userRouter);
+
+app.get('/', (req, res)=>{
+    res.send('Server is Ready');
+});
+
+app.use((err, req, res, next)=>{
+    res.status(500).send({message:err.message});
+});
