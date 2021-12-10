@@ -13,26 +13,26 @@ export default function Cadastro({submitForm}){
                 <form className="form-wrapper">
                     <div className="name">
                         <label htmlFor="label">Nome Completo</label>
-                        <input type="text" className="inputCadastro" name="fullname" value={values.fullname} onChange={handleChange}/>
-                        {errors.fullname && <p className="error">{errors.fullname}</p>}
+                        <input type="text" className="inputCadastro" name="fullname"/>
+                        
                     </div>
                     <div className="email">
                         <label htmlFor="label">Email</label>
-                        <input type="email" className="inputCadastro" name="email" value={values.email} onChange={handleChange}/>
-                        {errors.email && <p className="error">{errors.email}</p>}
+                        <input type="email" className="inputCadastro" name="email"/>
+                    
                     </div>
                     <div className="password">
                         <label htmlFor="label">Senha</label>
-                        <input type="password" className="inputCadastro" name="password" value={values.password} onChange={handleChange}/>
-                        {errors.password && <p className="error">{errors.password}</p>}
+                        <input type="password" className="inputCadastro" name="password"/>
+                    
                     </div>
                     <div className="password">
                         <label htmlFor="label">Confirmar Senha</label>
-                        <input type="password" className="inputCadastro" name="confipassword" value={values.confipassword} onChange={handleChange}/>
-                        {errors.confipassword && <p className="error">{errors.confipassword}</p>}
+                        <input type="password" className="inputCadastro" name="confipassword"/>
+                    
                     </div>
                     <div>
-                        <button className="submitCadastro" onClick={enviarSubmit}>Finalizar</button>
+                        <button className="submitCadastro">Finalizar</button>
                     </div>
                 </form>
             </div>

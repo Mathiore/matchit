@@ -59,3 +59,10 @@
     background-color: #fff;
     box-shadow: 5px 5px 25px 0px rgba(0,0,0,0.6);
 }
+
+.cadastrar{
+    margin-top: 15%;
+    text-align: center;
+    color: #fff;
+    font-family: 'Alata', sans-serif;
+}

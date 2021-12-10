@@ -18,7 +18,7 @@ function App() {
         <div className="container">
           <Sidebar/>
             <Routes>
-                <Route exact path="/" element={<Formulario/>}></Route>
+                <Route exact path="/" element={<Login/>}></Route>
                 <Route path="/CriarPartida" element={<CriarPartida/>}></Route>
                 <Route path="/ProcurarPartida" element={<ProcurarPartida/>}></Route>
                 <Route exact path="/Cadastro" element={<Formulario/>}></Route>
