@@ -6,11 +6,21 @@ import Map from './img/maps.jpeg'
 
 export default function ProcurarPartida(){
     const [partida, setPartida] = useState([]);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(false);
 
     useEffect(()=>{
         const fetchData = async () =>{
-            const {data} = await axios.get('/api/partidas');
-            setPartida(data);
+            try{
+                setLoading(true);
+                const {data} = await axios.get('/api/partidas');
+                setLoading(false);
+                setPartida(data);
+            } catch(err){
+                setError(err.message);
+                setLoading(false);
+            }
+            
         };
         fetchData();
     },[])

@@ -7,8 +7,8 @@ export const listPartidas = () =>async(dispatch) =>{
     });
     try{
         const {data} = await Axios.get('/api/partidas');
-        dispatch({type: PRODUCT_LIST_SUCCESS, payload: data});
+        dispatch({type: PARTIDA_LIST_SUCCESS, payload: data});
     } catch(error){
-        dispatch({type: PRODUCT_LIST_FAILED, payload: error.message});
+        dispatch({type: PARTIDA_LIST_FAILED, payload: error.message});
     }
 }

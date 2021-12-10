@@ -1,6 +1,6 @@
 const { PRODUCT_LIST_SUCCESS, PRODUCT_LIST_REQUEST, PRODUCT_LIST_FAILED} = require('../constantes/partidasConstant');
 
-const partidaListaReducer = (state, action) =>{
+export const partidaListaReducer = (state = {partidas: []}, action) =>{
     switch(action.type){
         case PRODUCT_LIST_REQUEST:
             return {loading: true};
