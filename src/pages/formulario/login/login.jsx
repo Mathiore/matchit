@@ -1,36 +1,28 @@
 import { useState, useEffect } from "react";
-import Validation from "../cadastro/validation";
+import './login.css'
 
 export default function Login(submitForm){
-    const enviarSubmit = (event) => {
-        event.preventDefault();
-        setErrors(Validation(values));
-        setDados(true);
-    };
+    return(
+        <div className="container">
+            <div className="app-login">
+                <div>
+                    <h2 className="title">Login</h2>
+                </div>
+                <form className="form-wrapper login">
+                    <div className="email">
+                        <label htmlFor="label">Email</label>
+                        <input type="email" className="inputCadastro" name="email"/>
 
-    const[values, setValues] = useState({
-        fullname:"",
-        email:"",
-        password:"",
-        confipassword:"",
-    });
-
-    const handleChange = (event) =>{
-        setValues({
-            ...values,
-            [event.target.name]: event.target.value,
-        });
-    };
-
-    const[errors, setErrors] = useState({});
-
-    const[dadosCorretos, setDados] = useState(false);
-
-    useEffect(()=>{
-        if(Object.keys(errors).length === 0 && dadosCorretos){
-            submitForm(true);
-        }
-    },[errors]);
-
-    return{handleChange, enviarSubmit, errors, values};
+                    </div>
+                    <div className="password">
+                        <label htmlFor="label">Senha</label>
+                        <input type="password" className="inputCadastro" name="password"/>
+                    </div>
+                    <div>
+                        <button className="submitCadastro">Entrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    )
 }

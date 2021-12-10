@@ -11,7 +11,8 @@
     border-radius: 10px;
     color:#fff;
     font-family: 'Alata', sans-serif;
-    
+    width: 400px;
+    height: 500px;
 }
 fieldset{
     border: 2px solid #fff;
@@ -26,7 +27,7 @@ legend{
     margin-bottom:10%;
     margin-top:5%;
     position: relative;
-    width: 300px;
+    width: 350px;
 }
 
 .inputUser{
