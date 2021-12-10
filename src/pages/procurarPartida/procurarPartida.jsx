@@ -2,6 +2,7 @@ import './procurarPartida.css'
 import {MeetingRoomOutlined} from '@material-ui/icons';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import Map from './img/maps.jpeg'
 
 export default function ProcurarPartida(){
     const [partida, setPartida] = useState([]);
@@ -45,6 +46,9 @@ export default function ProcurarPartida(){
                     <div className="conteudo">
                         <div className="conteudo-titulo">
                             <h1>Localização</h1>
+                            <div className="map-container">
+                                <img src={Map}/>
+                            </div>
                         </div>
                     </div>
                 </div>

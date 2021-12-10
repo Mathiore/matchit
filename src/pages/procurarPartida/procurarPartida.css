@@ -87,3 +87,8 @@
     background-color:#970827;
     border-radius: 10px;
 }
+
+.map-container img{
+    width: 380px;
+    height: 425px;
+}
