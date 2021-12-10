@@ -5,6 +5,10 @@ import data from './data.js';
 
 const app = express();
 
+mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/matchit',{
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+});
 
 
 app.get('/api/partidas',(req,res)=>{
